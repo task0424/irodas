@@ -1,0 +1,45 @@
+[13-Aug-2020 08:04:00 UTC] PHP Warning:  Error while sending QUERY packet. PID=8488 in C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\wp-db.php on line 2007
+[13-Aug-2020 08:04:01 UTC] PHP Stack trace:
+[13-Aug-2020 08:04:01 UTC] PHP   1. {main}() C:\Users\tasuk\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[13-Aug-2020 08:04:01 UTC] PHP   2. include() C:\Users\tasuk\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[13-Aug-2020 08:04:01 UTC] PHP   3. include() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[13-Aug-2020 08:04:01 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[13-Aug-2020 08:04:01 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[13-Aug-2020 08:04:01 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[13-Aug-2020 08:04:01 UTC] PHP   7. WP_CLI\Runner->run_command_and_exit() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1160
+[13-Aug-2020 08:04:01 UTC] PHP   8. WP_CLI\Runner->run_command() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:394
+[13-Aug-2020 08:04:01 UTC] PHP   9. WP_CLI\Dispatcher\Subcommand->invoke() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:371
+[13-Aug-2020 08:04:01 UTC] PHP  10. call_user_func:{phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451}() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[13-Aug-2020 08:04:01 UTC] PHP  11. WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure:phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:95-102}() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[13-Aug-2020 08:04:01 UTC] PHP  12. call_user_func:{phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98}() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[13-Aug-2020 08:04:01 UTC] PHP  13. Core_Command->check_update() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[13-Aug-2020 08:04:01 UTC] PHP  14. Core_Command->get_updates() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:77
+[13-Aug-2020 08:04:01 UTC] PHP  15. wp_version_check() phar://C:/Users/tasuk/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:1297
+[13-Aug-2020 08:04:01 UTC] PHP  16. get_site_transient() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\update.php:34
+[13-Aug-2020 08:04:01 UTC] PHP  17. get_site_option() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\option.php:1768
+[13-Aug-2020 08:04:01 UTC] PHP  18. get_network_option() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\option.php:1137
+[13-Aug-2020 08:04:01 UTC] PHP  19. get_option() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\option.php:1272
+[13-Aug-2020 08:04:01 UTC] PHP  20. wpdb->get_row() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\option.php:100
+[13-Aug-2020 08:04:01 UTC] PHP  21. wpdb->query() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\wp-db.php:2501
+[13-Aug-2020 08:04:01 UTC] PHP  22. wpdb->_do_query() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\wp-db.php:1895
+[13-Aug-2020 08:04:01 UTC] PHP  23. mysqli_query() C:\Users\tasuk\Local Sites\irodas\app\public\wp-includes\wp-db.php:2007
+[13-Aug-2020 08:18:12 UTC] PHP Warning:  copy(C:/Users/tasuk/Local Sites/irodas/app/public/wp-content/upgrade/luxeritas-3.10.0/luxeritas/inc/load-header.php): failed to open stream: No such file or directory in C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 281
+[13-Aug-2020 08:18:12 UTC] PHP Stack trace:
+[13-Aug-2020 08:18:12 UTC] PHP   1. {main}() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\update.php:0
+[13-Aug-2020 08:18:12 UTC] PHP   2. Theme_Upgrader->install() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\update.php:280
+[13-Aug-2020 08:18:12 UTC] PHP   3. Theme_Upgrader->run() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-theme-upgrader.php:220
+[13-Aug-2020 08:18:12 UTC] PHP   4. Theme_Upgrader->install_package() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-upgrader.php:788
+[13-Aug-2020 08:18:12 UTC] PHP   5. copy_dir() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-upgrader.php:586
+[13-Aug-2020 08:18:12 UTC] PHP   6. copy_dir() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\file.php:1696
+[13-Aug-2020 08:18:12 UTC] PHP   7. WP_Filesystem_Direct->copy() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\file.php:1674
+[13-Aug-2020 08:18:12 UTC] PHP   8. copy() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-filesystem-direct.php:281
+[13-Aug-2020 08:18:12 UTC] PHP Warning:  copy(C:/Users/tasuk/Local Sites/irodas/app/public/wp-content/upgrade/luxeritas-3.10.0/luxeritas/inc/load-header.php): failed to open stream: No such file or directory in C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 281
+[13-Aug-2020 08:18:12 UTC] PHP Stack trace:
+[13-Aug-2020 08:18:12 UTC] PHP   1. {main}() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\update.php:0
+[13-Aug-2020 08:18:12 UTC] PHP   2. Theme_Upgrader->install() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\update.php:280
+[13-Aug-2020 08:18:12 UTC] PHP   3. Theme_Upgrader->run() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-theme-upgrader.php:220
+[13-Aug-2020 08:18:12 UTC] PHP   4. Theme_Upgrader->install_package() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-upgrader.php:788
+[13-Aug-2020 08:18:12 UTC] PHP   5. copy_dir() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-upgrader.php:586
+[13-Aug-2020 08:18:12 UTC] PHP   6. copy_dir() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\file.php:1696
+[13-Aug-2020 08:18:12 UTC] PHP   7. WP_Filesystem_Direct->copy() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\file.php:1677
+[13-Aug-2020 08:18:12 UTC] PHP   8. copy() C:\Users\tasuk\Local Sites\irodas\app\public\wp-admin\includes\class-wp-filesystem-direct.php:281
